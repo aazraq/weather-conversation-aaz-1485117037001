@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: weather-conversation-aaz
+  host: weather-conversation-aaz
+  disk_quota: 1024M
+  services:
+  - Conversation-ft
+  - Weather Company Data-p2
+  env:
+    WORKSPACE_ID: 5cea3898-6427-426f-bcb1-3ae3655e5a3f
